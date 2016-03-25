@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Fix message box in Moodle",
+  "description": "This extension shows a Google Image search result for the current page",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["http://193.140.134.13/moodle/message/*"],
+      "js": ["adjust.js"]
+    }
+  ]
+
+  // "background": {
+  //   "scripts": ["adjust.js"]
+  // },
+
+  // "permissions": [
+  //   "tabs", "http://193.140.134.13/moodle/message/*"
+  // ]
+
+
+}
